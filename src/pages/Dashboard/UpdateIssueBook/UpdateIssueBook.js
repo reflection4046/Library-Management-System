@@ -31,7 +31,7 @@ const UpdateIssueBook = ({ modalIsOpen, closeModal, findBook }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(updateData);
-    fetch(`http://localhost:5000/update/${findBook._id}`, {
+    fetch(`https://odd-ray-vestments.cyclic.app/update/${findBook._id}`, {
       method: "PATCH",
       headers: {
         "content-type": "application/json",

@@ -21,7 +21,7 @@ const BookDetails = ({ issueBooks }) => {
   // deleted item
   const handleDelete = (id) => {
     // console.log("deleted", id);
-    fetch(`http://localhost:5000/itemDeleted/${id}`, {
+    fetch(`https://odd-ray-vestments.cyclic.app/itemDeleted/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

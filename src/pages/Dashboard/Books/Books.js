@@ -5,7 +5,7 @@ const Books = () => {
   const [books, setBooks] = useState([]);
   console.log(books);
   useEffect(() => {
-    fetch(`http://localhost:5000/getBooks`)
+    fetch(`https://odd-ray-vestments.cyclic.app/getBooks`)
       .then((res) => res?.json())
      
       .then((books) => setBooks(books));

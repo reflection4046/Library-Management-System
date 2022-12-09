@@ -13,7 +13,7 @@ const IssueBook = ({ issueBooks, setIssueBooks }) => {
   } = useForm();
   const onSubmit = (e) => {
     //console.log(e);
-    const url = `http://localhost:5000/issueBook`;
+    const url = `https://odd-ray-vestments.cyclic.app/issueBook`;
     fetch(url, {
       method: "POST",
       headers: {

@@ -14,7 +14,7 @@ const AddBook = () => {
       department: e.department_name
     };
     console.log(booksData);
-    const url = `http://localhost:5000/addBook`;
+    const url = `https://odd-ray-vestments.cyclic.app/addBook`;
     fetch(url, {
       method: "POST",
       headers: {
